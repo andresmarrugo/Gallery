@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import {Row,Col, Container}from 'react-bootstrap';
 import NavSearchBar from "./NavSearchBar";
-import ImageUpload from './ImageUpload';
-import FormContainer from "../FormContainer";
+import ImageList from './ImageList';
+
+import ImageLoad from "../ImageLoad";
 
 export default class Gallery extends Component {
   render() {
@@ -15,8 +16,8 @@ export default class Gallery extends Component {
                 </Col>
             </Row>
             <Row>
-                <Col sm={4}><FormContainer/></Col>
-                <Col sm={8}>VIEW</Col>
+                <Col sm={4}><ImageLoad/></Col>
+                <Col sm={8}><ImageList/></Col>
             </Row>
         </Container>          
     );
